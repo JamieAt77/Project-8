@@ -1,0 +1,18 @@
+{
+  "name": "project-9",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A full-stack Vite React application with an Express backend",
+  "scripts": {
+    "start": "node backend/server.js",
+    "frontend": "vite",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run start\"",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "resolutions": {
+    "express": "^4.18.2"
+  }
+}
